@@ -61484,7 +61484,7 @@ http://dx.doi.org/10.1002/2012JE004322,%202013	O
 http://dx.doi.org/10.1029/2009GL041870	O
 http://dx.doi.org/10.1130/G43613.1	O
 http://dx.doi.org/10.1130/G43613.1	O
-http://dx.doi.org/10.1002/2014JE004622   	O
+http://dx.doi.org/10.1002/2014JE004622���	O
 
 
 .	O
