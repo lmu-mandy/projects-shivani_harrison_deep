@@ -42,7 +42,7 @@ The source code for NER with BC2GM is located in LPSC_and_BC2GM/ folder. Downloa
 
 The source code for NER with JNLPBA is located in ner_JNLPBA/ folder. Download the Jupyter notebook BERT_JNLPBA.ipynb file, upload it to your google drive and don't forget to access GPU. Now run all the cells.
 
-We sincerely Thank Prof. Mandy for all the guidance, Dr. Thamme Gowda for Brat2ner.py code and Neils Rogge for tutorials on [NER with BERT](https://github.com/NielsRogge/Transformers-Tutorials/tree/master/BERT), Google for providing free GPU’s, HuggingFace for free API’s with documentation..  
+We sincerely Thank Prof. Mandy for all the guidance. We Thanks Dr. Thamme Gowda for Brat2ner.py code, Neils Rogge for tutorials on [NER with BERT](https://github.com/NielsRogge/Transformers-Tutorials/tree/master/BERT), Google for providing free GPU’s, HuggingFace for free API’s with documentation. 
 
 
 
