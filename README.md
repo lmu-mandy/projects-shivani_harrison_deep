@@ -8,7 +8,7 @@ We chose these three applications, NER on
 For accessing the free GPU's that google provides, Edit --> Notebook settings --> GPU
 
 
-## Intructions for LPSC Dataset
+## Instructions for LPSC Dataset
 
 1. If you want to start from scratch, then the orginal LPSC dataset is located inside LPSC_and_BC2GM/LPSC-annotated/ folder, which is in brat annotaion format. 
 
@@ -33,12 +33,12 @@ which will start the server. Now run the brat2ner.py command with input as input
 
 The source code for NER with LPSC is located in LPSC_and_BC2GM/ folder. Download the Jupyter notebook NER_BERT.ipynb file, upload it to your google drive and don't forget to access GPU. Now download the test.txt and train.txt dataset from LPSC_and_BC2GM/LPSC_dataset and upload it google colab and run all the cells.
 
-## Intructions for BC2GM Dataset
+## Instructions for BC2GM Dataset
 
 The source code for NER with BC2GM is located in LPSC_and_BC2GM/ folder. Download the Jupyter notebook NER_BERT.ipynb file, upload it to your google drive and don't forget to access GPU. Now download the BC_test.tsv and BC_train.tsv dataset from LPSC_and_BC2GM/BC2GM_dataset and upload it google colab before running all the cells make sure to uncomment 4 lines and comment 4 lines, the line details are provided in the colab file. Since we are using same source code for both LPSC and BC2GM datset, it is necessary. Now run all the cells.
 
 
-## Intructions for JNLPBA Dataset
+## Instructions for JNLPBA Dataset
 
 The source code for NER with JNLPBA is located in ner_JNLPBA/ folder. Download the Jupyter notebook BERT_JNLPBA.ipynb file, upload it to your google drive and don't forget to access GPU. Now run all the cells.
 
