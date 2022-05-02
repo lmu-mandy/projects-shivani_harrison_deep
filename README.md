@@ -19,7 +19,7 @@ First convert it into IOB fomat, for that run the script nerToIOB.py, the input 
 2. ls $PWD/*.ann > 2.list    (all the .ann file paths are in 2.list file) 
 3. paste  -d "," 1.list  2.list  > input.list   (combines the path of both .txt,.ann file with comma seperated)
 ```
-The nertoIOB.py replaces the orginal annotaions with IOB format. 
+Pass the input.list as input to the nertoIOB.py, which replaces the orginal annotaions with IOB format. 
 
 ## step2:
 Convert the Brat annotation to NER format, for this download stanford core NLP package 2015-04-20 3.5.2 version from https://stanfordnlp.github.io/CoreNLP/history.html, unzip the file and after getting into the folder run the command 
