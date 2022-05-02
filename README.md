@@ -7,7 +7,8 @@ We chose these three applications, NER on
 
 
 ## Intructions for LPSC Dataset
-If you want to start from scratch, then the orginal LPSC dataset is located inside LPSC_and_BC2GM/LPSC-annotated/ folder, which is in brat annotaion format. 
+
+1. If you want to start from scratch, then the orginal LPSC dataset is located inside LPSC_and_BC2GM/LPSC-annotated/ folder, which is in brat annotaion format. 
 
 ## step1:
 First convert it into IOB fomat, for that run the script nerToIOB.py, the input file to this should contain the path of the .txt and .ann file next to eachother. For that inside LPSC-16 and LPSC-15 use the commands
@@ -26,9 +27,24 @@ java -Xmx5g edu.stanford.nlp.pipeline.StanfordCoreNLP -file input.txt
 
 which will start the server. Now run the brat2ner.py command with input as input.list, this outputs the NER format, once the NER format is avaible, you cal close the core NLP server.
 
-If you want to directly access the LPSC dataset in NER format it is avaible in LPSC_and_BC2GM/LPSC_dataset.
+2. If you want to directly access the LPSC dataset in NER format it is avaible in LPSC_and_BC2GM/LPSC_dataset.
 
-The code for NER BERT model can be run by 
+The source code for NER with LPSC is located in LPSC_and_BC2GM/ folder. Download the Jupyter notebook NER_BERT.ipynb file, upload it to your google drive and don't forget to access GPU. Now download the test.txt and train.txt dataset from LPSC_and_BC2GM/LPSC_dataset and upload it google colab and run all the cells.
+
+## Intructions for BC2GM Dataset
+
+The source code for NER with BC2GM is located in LPSC_and_BC2GM/ folder. Download the Jupyter notebook NER_BERT.ipynb file, upload it to your google drive and don't forget to access GPU. Now download the BC_test.tsv and BC_train.tsv dataset from LPSC_and_BC2GM/BC2GM_dataset and upload it google colab before running all the cells make sure to uncomment 4 lines and comment 4 lines, the line details are provided in the colab file. Since we are using same source code for both LPSC and BC2GM datset, it is necessary. Now run all the cells.
+
+
+## Intructions for JNLPBA Dataset
+
+The source code for NER with JNLPBA is located in ner_JNLPBA/ folder. Download the Jupyter notebook BERT_JNLPBA.ipynb file, upload it to your google drive and don't forget to access GPU. Now run all the cells.
+
+
+
+
+
+
 
 
 
