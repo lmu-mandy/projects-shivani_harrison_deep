@@ -22,7 +22,7 @@ First convert it into IOB fomat, for that run the script nerToIOB.py, the input 
 Pass the input.list as input to the nertoIOB.py, which replaces the orginal annotaions with IOB format. 
 
 ## step2:
-Convert the Brat annotation to NER format, for this download stanford core NLP package 2015-04-20 3.5.2 version from https://stanfordnlp.github.io/CoreNLP/history.html, unzip the file and after getting into the folder run the command 
+Convert the Brat annotation to NER format, for this download stanford core NLP package 2015-04-20 3.5.2 version from https://stanfordnlp.github.io/CoreNLP/history.html, unzip the file and after getting inside that folder run the command 
 ```
 java -Xmx5g edu.stanford.nlp.pipeline.StanfordCoreNLP -file input.txt
 ```
