@@ -5,10 +5,9 @@ accept_labels = {'B-Element', 'B-Mineral', 'B-Target', 'Element', 'Mineral', 'Ta
 
 
 def converter(p):
+    #opens each file and converts it into a list
     with open(p) as f:
         lines = f.readlines()
-    # print(lines)
-    # print("sen")
     if lines == []:
         return
     nums = []
@@ -25,23 +24,19 @@ def converter(p):
       k.append(int(m[1]))
       k.append(int(m[2]))
       k.append(l[2])
-      # print(k)
       nums.append(k)
       k = []
     if nums == []:
         return []
-    # print("Hello")
-    # print(nums)
     lists = sorted(nums, key=itemgetter(2))
     l = handel_rest(lists)
-    # print(l)
     fo = open(p, "w")
     for i in l:
         fo.write(i)
     fo.close()
 
 def handel_rest(lists):
-    # print(lists)
+    #The list will check if there is any tag next to each other, if so It will assign B-, I- else B- , O-
     nums = lists[0][3]
     word = lists[0][1]
     pres = "B-" + lists[0][1]
@@ -50,7 +45,6 @@ def handel_rest(lists):
     if len(lists) == 1:
         return another(lists, an)
     for i in range(1,len(lists)):
-      #print(lists[i][2], nums)
       if lists[i][2] + 1 == nums:
         word = lists[i][1]
         if word[:2] == "I-" or word[:2] == "B-":
@@ -69,6 +63,7 @@ def handel_rest(lists):
     return another(lists, an)
 
 def another(lists, an):
+    #convertes it back into list of list/ orginal format
     for li in lists:
       k = []
       l = li[1]+" "+str(li[2])+" "+str(li[3])
@@ -82,16 +77,12 @@ def another(lists, an):
 def convert_all(input_paths, output):
         count = 0
         with open(input_paths) as paths:
-            # with open(output, 'w') as out:
+            #reading the path of each file
             paths   = [p.strip() for p in paths]
             for p in paths:
                     # print(p)
                 count = count + 1
                 converter(p)
-                    # print(k)
-                #     out.write(str(k) + "\n")
-                # out.write("\n")
-        # print(count)
 
 
 if __name__ == '__main__':
